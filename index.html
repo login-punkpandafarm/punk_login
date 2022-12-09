@@ -1,0 +1,172 @@
+<html lang="en"><head>
+	<title>PUNK PANDA USER LOGIN</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="https://login.punkpandafarm.com/punk_login/images/icons/favicon.ico">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="https://login.punkpandafarm.com/punk_login/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="https://login.punkpandafarm.com/punk_login/css/util.css">
+	<link rel="stylesheet" type="text/css" href="file:///C:/Users/Administrator/Documents/24082022/Punkm%20Panda/style.css">
+<!--===============================================================================================-->
+
+<meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
+
+<!--Tost Related-->
+
+	<link href="https://login.punkpandafarm.com/punk_login/css/toast.css?0.6775629" rel="stylesheet">
+	<script src="file:///C:/Users/Administrator/Documents/24082022/Punkm%20Panda/toast.js"></script>
+
+<!--Tost Related-->
+
+<script src="file:///C:/Users/Administrator/Documents/24082022/Punkm%20Panda/login_chk_frm.js"></script>
+
+<script language="javascript">
+
+	function ShPWD()
+	{
+	  var x = document.getElementById("txt_pwd");
+	  
+	  if (x.type === "password")
+	  {
+		x.type = "text";
+	  } 
+	  else
+	  {
+		x.type = "password";
+	  }
+	}
+
+</script>
+
+<!--This code is Useful to Reload the Entire Page on Clicking the Browser Back Button-->
+
+<script>
+
+	const [entry] = performance.getEntriesByType("navigation");
+
+	// Show it in a nice table in the developer console
+	console.table(entry.toJSON());
+
+	if (entry["type"] === "back_forward")
+    	location.reload();
+
+</script>
+
+
+
+</head>
+
+
+	<body>
+
+	
+	<!-- The actual snackbar -->
+<div id="snackbar" class="">Invalid Login</div>
+
+	<div class="limiter">
+		<div class="container-login100" style="background-image: url('file:///C:/Users/Administrator/Documents/24082022/Punkm%20Panda/bg.jpg');">
+			<div class="wrap-login100">
+
+				<form name="mail_frm" id="mail_frm" class="login100-form validate-form" method="post">
+
+					<center>
+						<a href="../index.php">
+							<img src="file:///C:/Users/Administrator/Documents/24082022/Punkm%20Panda/logo.png" border="0">
+						</a>
+					</center>
+
+					<!--<span class="login100-form-logo">
+						<i class="zmdi zmdi-landscape"></i>
+					</span>-->
+
+					<span class="login100-form-title p-b-34 p-t-27">
+						Log in
+					</span>
+
+					<div class="wrap-input100 validate-input" data-validate="Enter username">
+						<input class="input100" type="text" name="txt_un" id="txt_un" placeholder="Enter username">
+						<span class="focus-input100" style="
+    font-size: 24px;
+    padding-top: 9px;
+"><svg xmlns="http://www.w3.org/2000/svg" style="vertical-align: -0.125em;" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="white" d="M12 4a4 4 0 0 1 4 4a4 4 0 0 1-4 4a4 4 0 0 1-4-4a4 4 0 0 1 4-4m0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4Z"></path></svg>
+</span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate="Enter password">
+						<input class="input100" type="password" name="txt_pwd" id="txt_pwd" placeholder="Enter password">
+						<span class="focus-input100" style="
+    font-size: 24px;
+    padding-top: 9px;
+"><svg xmlns="http://www.w3.org/2000/svg" style="vertical-align: -0.125em;" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="white" d="M6 22q-.825 0-1.412-.587Q4 20.825 4 20V10q0-.825.588-1.413Q5.175 8 6 8h1V6q0-2.075 1.463-3.538Q9.925 1 12 1t3.538 1.462Q17 3.925 17 6v2h1q.825 0 1.413.587Q20 9.175 20 10v10q0 .825-.587 1.413Q18.825 22 18 22Zm6-5q.825 0 1.413-.587Q14 15.825 14 15q0-.825-.587-1.413Q12.825 13 12 13q-.825 0-1.412.587Q10 14.175 10 15q0 .825.588 1.413Q11.175 17 12 17ZM9 8h6V6q0-1.25-.875-2.125T12 3q-1.25 0-2.125.875T9 6Z"></path></svg>
+</span>
+					</div>
+
+					<div class="contact100-form-checkbox">
+						<input class="input-checkbox100" type="checkbox" id="ckb1" name="remember-me" onclick="ShPWD()"> 
+						<label class="label-checkbox100" for="ckb1">
+							Show Password
+						</label>
+					</div>
+
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn" onclick="return check();">
+							Login
+						</button>
+					</div>
+
+					<div class="text-center p-t-90">
+						<a class="txt1">
+							Forgot Username/Password?
+						</a>
+						&nbsp;&nbsp;&nbsp;
+						<!-- <a class="txt1" >
+							New Registration!
+						</a> -->
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+
+	<div id="dropDownSelect1"></div>
+
+
+	
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+
+
+
+</body></html>
